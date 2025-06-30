@@ -19,7 +19,7 @@
  * Awesomebar takes precedence over fancybar.
  * https://dwm.suckless.org/patches/awesomebar/
  */
-#define BAR_AWESOMEBAR_PATCH 0
+#define BAR_AWESOMEBAR_PATCH 1
 
 /* This patch depends on statuscmd patch and adds integration with a (patched)
  * dwmblocks instance to give a clickable status bar. One must not necessarily
@@ -84,9 +84,6 @@
 /* Show layout symbol in bar */
 #define BAR_LTSYMBOL_PATCH 1
 
-/* Adds a colour schme for the layout symbol */
-#define BAR_LTSYMBOL_SCHEME_PATCH 0
-
 /* Adds powerline arrows for the status.
  * This uses statuscolors logic for choosing colors for the powerline. As these markers
  * are also control characters there is no explicit statuscmd support for this patch.
@@ -116,7 +113,7 @@
 /* This patch turns the titlebar area into a mfact-respecting tabbar showing each client's title.
  * https://dwm.suckless.org/patches/bartabgroups/
  */
-#define BAR_TABGROUPS_PATCH 0
+#define BAR_TABGROUPS_PATCH 1
 
 /* This patch adds an option to place tags in rows like in many other window managers.
  * https://dwm.suckless.org/patches/taggrid/
@@ -175,7 +172,7 @@
 /* The systray patch adds systray for the status bar.
  * https://dwm.suckless.org/patches/systray/
  */
-#define BAR_SYSTRAY_PATCH 0
+#define BAR_SYSTRAY_PATCH 1
 
 /* Show tag symbols in the bar. */
 #define BAR_TAGS_PATCH 1
@@ -292,12 +289,6 @@
  * https://codemadness.org/paste/dwm-border-bar.patch
  */
 #define BAR_BORDER_PATCH 0
-
-/* Optional addon for the border patch. This makes it so that the bar border is drawn using
- * the background colour of the bar as opposed to the border colour. This allows for the
- * border to have the same transparency as the background thus giving a more uniform look.
- */
-#define BAR_BORDER_COLBG_PATCH 0
 
 /* This patch centers the WM_NAME of the currently selected window on the status bar.
  * This is compatible with the wintitle, bartabgroups, flexwintitle and awesomebar bar
@@ -431,7 +422,7 @@
  *
  * https://dwm.suckless.org/patches/statuscolors/
  */
-#define BAR_STATUSCOLORS_PATCH 0
+#define BAR_STATUSCOLORS_PATCH 1
 
 /* This patch adds configuration options for horizontal and vertical padding in the status bar.
  * https://dwm.suckless.org/patches/statuspadding/
@@ -461,7 +452,7 @@
 /* Adds a window task switcher toggled using alt-tab.
  * https://dwm.suckless.org/patches/alt-tab/
  */
-#define ALT_TAB_PATCH 0
+#define ALT_TAB_PATCH 1
 
 /* All floating windows are centered, like the center patch, but without a rule.
  * The center patch takes precedence over this patch.
@@ -469,15 +460,6 @@
  * https://dwm.suckless.org/patches/alwayscenter/
  */
 #define ALWAYSCENTER_PATCH 0
-
-/* Allows for floating windows to be toggled to be always on top (aot).
- *
- * Disclaimer: Some flickering may be expected with this patch when floating and aot
- * windows overlap.
- *
- * https://dwm.suckless.org/patches/alwaysontop/
- */
-#define ALWAYSONTOP_PATCH 0
 
 /* This patch allows windows to be resized with its aspect ratio remaining constant.
  * https://dwm.suckless.org/patches/aspectresize/
@@ -522,19 +504,6 @@
  */
 #define AUTORESIZE_PATCH 0
 
-/* This patch allows for the mouse cursor to automatically hide when the user uses the keyboard.
- *
- * You need to uncomment the corresponding lines in config.mk to use additional libraries
- * when including this patch.
- *
- * This patch depends on the following libraries:
- *    - libxfixes
- *    - libxi
- *
- * https://github.com/bakkeby/patches/wiki/banish
- */
-#define BANISH_PATCH 0
-
 /* This patch adds proper support for Right-To-Left languages. (such as Farsi, Arabic or Hebrew).
  *
  * You need to uncomment the corresponding lines in config.mk to use the -lfribidi library
@@ -545,7 +514,7 @@
  *
  * https://dwm.suckless.org/patches/bidi/
  */
-#define BIDI_PATCH 0
+#define BIDI_PATCH 1
 
 /* This patch adds a client rule option to allow the border width to be specified on a per
  * client basis.
@@ -607,7 +576,7 @@
 /* The cyclelayouts patch lets you cycle through all your layouts.
  * https://dwm.suckless.org/patches/cyclelayouts/
  */
-#define CYCLELAYOUTS_PATCH 0
+#define CYCLELAYOUTS_PATCH 1
 
 /* Make dwm respect _MOTIF_WM_HINTS property, and not draw borders around windows requesting
  * for it. Some applications use this property to notify window managers to not draw window
@@ -730,7 +699,7 @@
 /* Switch focus only by mouse click and not sloppy (focus follows mouse pointer).
  * https://dwm.suckless.org/patches/focusonclick/
  */
-#define FOCUSONCLICK_PATCH 0
+#define FOCUSONCLICK_PATCH 1
 
 /* Selects the next window having the urgent flag regardless of the tag it is on.
  * The urgent flag can be artificially set with the following xdotool command on any window:
@@ -804,7 +773,7 @@
  * applications that assume that the window manager is using window reparenting.
  * Refer to the ISSUES secton of the dwm man page for more details.
  */
-#define LG3D_PATCH 0
+#define LG3D_PATCH 1
 
 /* By default in dwm it is possible to make an application fullscreen, then use
  * the focusstack keybindings to focus on other windows beneath the current window.
@@ -854,7 +823,7 @@
 /* This patch allows you to move and resize dwm's clients using keyboard bindings.
  * https://dwm.suckless.org/patches/moveresize/
  */
-#define MOVERESIZE_PATCH 0
+#define MOVERESIZE_PATCH 1
 
 /* This patch allows you to move clients around in the stack and swap them with the master.
  * https://dwm.suckless.org/patches/movestack/
@@ -948,7 +917,7 @@
  * monitor (default).
  * https://dwm.suckless.org/patches/pertag/
  */
-#define PERTAG_PATCH 0
+#define PERTAG_PATCH 1
 
 /* Option to enable gaps on a per tag basis rather than globally.
  * Depends on both pertag and vanitygaps patches being enabled.
@@ -969,7 +938,7 @@
  * in the tiled stack (up, down, left, right).
  * https://github.com/bakkeby/patches/wiki/placedir
  */
-#define PLACEDIR_PATCH 0
+#define PLACEDIR_PATCH 1
 
 /* This patch lets you change the position of a client in the stack using the mouse.
  * https://github.com/bakkeby/patches/wiki/placemouse
@@ -995,11 +964,11 @@
  *
  * https://github.com/bakkeby/patches/wiki/renamedscratchpads
  */
-#define RENAMED_SCRATCHPADS_PATCH 0
+#define RENAMED_SCRATCHPADS_PATCH 1
 
 /* Renamed scratchpads option to auto-hide scratchpads when moving to a different tag.
  * This behaviour is similar to that of the (multiple) scratchpads patch. */
-#define RENAMED_SCRATCHPADS_AUTO_HIDE_PATCH 0
+#define RENAMED_SCRATCHPADS_AUTO_HIDE_PATCH 1
 
 /* Shifts all clients per tag to leftmost unoccupied tags.
  *
@@ -1055,7 +1024,7 @@
  * will be restored.
  * https://dwm.suckless.org/patches/save_floats/
  */
-#define SAVEFLOATS_PATCH 0
+#define SAVEFLOATS_PATCH 1
 
 /* The scratchpad patch allows you to spawn or restore floating terminal windows.
  * It is typically useful when one need to do some short typing.
@@ -1122,7 +1091,7 @@
  * Also see the focusadjacenttag patch.
  * https://dwm.suckless.org/patches/shift-tools/
  */
-#define SHIFTBOTH_PATCH 0
+#define SHIFTBOTH_PATCH 1
 
 /* Swaps all the clients on the current tag with all the client on the next/prev tag.
  * Depends on the swaptags patch.
@@ -1145,7 +1114,7 @@
 /* This patch adds keybindings for left and right circular shift through tags.
  * https://github.com/chau-bao-long/dotfiles/blob/master/suckless/dwm/shiftview.diff
  */
-#define SHIFTVIEW_PATCH 0
+#define SHIFTVIEW_PATCH 1
 
 /* This variant of the shiftview patch adds left and right circular shift through tags,
  * but skips tags where there are no clients.
@@ -1407,7 +1376,7 @@
  * https://github.com/bakkeby/patches/blob/master/dwm/dwm-vanitygaps-6.2.diff
  * https://github.com/bakkeby/patches/blob/master/dwm/dwm-cfacts-vanitygaps-6.2.diff
  */
-#define VANITYGAPS_PATCH 0
+#define VANITYGAPS_PATCH 1
 
 /* This patch adds outer gaps for the monocle layout.
  * Most gaps patches tries to avoid gaps on the monocle layout, as it is often used as a
@@ -1509,7 +1478,7 @@
  * columns (i.e. left to right).
  * https://dwm.suckless.org/patches/columns/
  */
-#define COLUMNS_LAYOUT 0
+#define COLUMNS_LAYOUT 1
 
 /* Deck layout.
  * https://dwm.suckless.org/patches/deck/
