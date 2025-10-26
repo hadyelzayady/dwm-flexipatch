@@ -1150,7 +1150,9 @@ static const Key keys[] = {
 	#endif // SHIFTTAGCLIENTS_PATCH
 	#if SHIFTVIEW_PATCH
 	{ MODKEY|ControlMask|Mod1Mask,             XK_h,        shiftview,              { .i = -1 } },
-	{ MODKEY|ControlMask|Mod1Mask,             XK_l,  shiftview,              { .i = +1 } },
+	{ MODKEY|ControlMask|Mod1Mask,             XK_l,        shiftview,              { .i = +1 } },
+	{ ControlMask|Mod1Mask,                    XK_Left,     shiftview,              { .i = -1 } },
+	{ ControlMask|Mod1Mask,                    XK_Right,    shiftview,              { .i = +1 } },
 	#endif // SHIFTVIEW_PATCH
 	#if SHIFTVIEW_CLIENTS_PATCH
 	{ MODKEY|Mod4Mask,              XK_Tab,        shiftviewclients,       { .i = -1 } },
