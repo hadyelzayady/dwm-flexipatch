@@ -208,6 +208,9 @@
  */
 #define BAR_WINICON_PATCH 0
 
+/* Addon for the winicon patch - do not display window title if icon exists */
+#define BAR_WINICON_NOTITLE_PATCH 0
+
 /* Show window title in bar */
 #define BAR_WINTITLE_PATCH 1
 
@@ -640,6 +643,10 @@
  * cfact to adjust the client's size in the stack. This patch depends on the cfacts patch.
  */
 #define DRAGCFACT_PATCH 0
+
+/* Patch that combines dragfact and dragmfact.
+ */
+#define DRAGFACT_PATCH 0
 
 /* This patch lets you resize the split in the tile layout (i.e. modify mfact) by holding
  * the modkey and dragging the mouse.
